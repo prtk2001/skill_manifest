@@ -2,11 +2,10 @@
   "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
   "$id": "BeagleSendQuerySkill",
   "name": "BeagleSendQuerySkill",
-  "description": "Forward user’s NL query to the Beagle Teams app bot",
-  "publisherName": "Decision Point Analytics Inc",
   "version": "1.0",
+  "publisherName": "Decision Point Analytics Inc",
+  "description": "Forward the user’s natural-language query to the Beagle Teams-app bot",
   "iconUrl": "https://beagle-dev7-teams.decisionpoint.in/icons/color.png",
-  "tags": ["Beagle","TeamsApp","Query"],
   "endpoints": [
     {
       "name": "production",
@@ -19,20 +18,16 @@
     "SendQuery": {
       "type": "event",
       "name": "SendQuery",
-      "description": "Send the user’s natural-language query to the Teams app bot",
-      "value": { "$ref": "#/definitions/SendQueryRequest" }
-    }
-  },
-  "definitions": {
-    "SendQueryRequest": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "type": "string",
-          "description": "The user’s raw input message"
+      "description": "Send the user’s raw input to the Teams-app bot",
+      "value": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "The user's full query"
+          }
         }
-      },
-      "required": ["text"]
+      }
     }
   }
 }
