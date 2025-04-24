@@ -8,7 +8,7 @@
   "iconUrl": "https://beagle-dev7-teams.decisionpoint.in/icons/color.png",
   "endpoints": [
     {
-      "name": "production",
+      "name": "beagle-dev7",
       "protocol": "BotFrameworkV3",
       "endpointUrl": "https://beagle-dev7-teams.decisionpoint.in/api/messages",
       "msAppId": "2fe84f30-19cf-4bcb-abda-2dbf870efc5e"
