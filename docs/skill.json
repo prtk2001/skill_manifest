@@ -8,10 +8,10 @@
   "iconUrl": "https://beagle-dev7-teams.decisionpoint.in/icons/color.png",
   "endpoints": [
     {
-      "name": "beagle-dev7",
+      "name": "beagle-dev11",
       "protocol": "BotFrameworkV3",
-      "endpointUrl": "https://beagle-dev7-teams.decisionpoint.in/va_router/",
-      "msAppId": "2fe84f30-19cf-4bcb-abda-2dbf870efc5e"
+      "endpointUrl": "https://beagle-dev11-teams.decisionpoint.in/va_router/",
+      "msAppId": "1488ebf4-e0ee-4ac7-acba-b311b0956387"
     }
   ],
   "activities": {
