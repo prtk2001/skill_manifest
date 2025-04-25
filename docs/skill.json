@@ -10,7 +10,7 @@
     {
       "name": "beagle-dev11",
       "protocol": "BotFrameworkV3",
-      "endpointUrl": "https://beagle-dev11-teams.decisionpoint.in/va_router/",
+      "endpointUrl": "https://beagle-dev11-studio.decisionpoint.in/va_router/",
       "msAppId": "1488ebf4-e0ee-4ac7-acba-b311b0956387"
     }
   ],
