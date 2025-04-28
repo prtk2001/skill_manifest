@@ -9,10 +9,8 @@
   "description": "Forward the user’s natural-language query to the Beagle Teams-app bot",
   "iconUrl": "https://beagle-dev7-teams.decisionpoint.in/icons/color.png",
 
-  /* required bot identity */
   "msAppId": "1488ebf4-e0ee-4ac7-acba-b311b0956387",
 
-  /* where Copilot will send activities */
   "endpoints": [
     {
       "name": "beagle-dev11",
@@ -22,7 +20,6 @@
     }
   ],
 
-  /* actions tell Copilot WHEN to call the skill */
   "actions": [
     {
       "id": "ForwardAnyUtterance",
@@ -32,7 +29,6 @@
     }
   ],
 
-  /* activities the bot understands (optional but kept) */
   "activities": {
     "message": { "type": "message", "description": "Fallback to pass raw text" },
     "SendQuery": {
