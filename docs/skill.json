@@ -1,8 +1,7 @@
 {
   "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
-
   "name": "BeagleSendQuerySkill",
-  "id":   "BeagleSendQuerySkill",
+  "id": "BeagleSendQuerySkill",
   "version": "1.0",
 
   "publisherName": "Decision Point Analytics Inc",
@@ -25,12 +24,15 @@
       "id": "ForwardAnyUtterance",
       "type": "message",
       "description": "Send any user text to the Beagle bot",
-      "trigger": { "utterance": ".*" }          // wildcard
+      "trigger": { "utterance": ".*" }
     }
   ],
 
   "activities": {
-    "message": { "type": "message", "description": "Fallback to pass raw text" },
+    "message": {
+      "type": "message",
+      "description": "Fallback to pass raw text"
+    },
     "SendQuery": {
       "type": "event",
       "name": "SendQuery",
