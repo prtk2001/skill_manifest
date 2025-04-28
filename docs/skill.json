@@ -1,8 +1,7 @@
 {
   "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
-
   "name": "BeagleSendQuerySkill",
-  "id":   "BeagleSendQuerySkill",
+  "id": "BeagleSendQuerySkill",
   "version": "1.0",
 
   "publisherName": "Decision Point Analytics Inc",
@@ -23,10 +22,10 @@
   "actions": [
     {
       "id": "ForwardAnyUtterance",
-      "definition": {
-        "description": "Send any user text to the Beagle bot"
-      },
       "type": "message",
+      "title": "Forward any utterance",
+      "description": "Send any user text to the Beagle bot",
+      "instructions": "This action forwards all user text to the Beagle Teams-app bot.",
       "trigger": { "utterance": ".*" }
     }
   ],
