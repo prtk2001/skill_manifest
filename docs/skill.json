@@ -2,7 +2,7 @@
   "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
 
   "name": "BeagleSendQuerySkill",
-  "id":   "BeagleSendQuerySkill",
+  "$id":   "BeagleSendQuerySkill",
   "version": "1.0",
 
   "publisherName": "Decision Point Analytics Inc",
