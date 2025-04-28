@@ -1,11 +1,18 @@
 {
-  "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
-  "$id": "BeagleSendQuerySkill",
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
+
   "name": "BeagleSendQuerySkill",
+  "id":   "BeagleSendQuerySkill",
   "version": "1.0",
+
   "publisherName": "Decision Point Analytics Inc",
   "description": "Forward the user’s natural-language query to the Beagle Teams-app bot",
   "iconUrl": "https://beagle-dev7-teams.decisionpoint.in/icons/color.png",
+
+  /* required bot identity */
+  "msAppId": "1488ebf4-e0ee-4ac7-acba-b311b0956387",
+
+  /* where Copilot will send activities */
   "endpoints": [
     {
       "name": "beagle-dev11",
@@ -14,8 +21,20 @@
       "msAppId": "1488ebf4-e0ee-4ac7-acba-b311b0956387"
     }
   ],
+
+  /* actions tell Copilot WHEN to call the skill */
+  "actions": [
+    {
+      "id": "ForwardAnyUtterance",
+      "type": "message",
+      "description": "Send any user text to the Beagle bot",
+      "trigger": { "utterance": ".*" }          // wildcard
+    }
+  ],
+
+  /* activities the bot understands (optional but kept) */
   "activities": {
-      "message": { "type": "message", "description": "Fallback to pass raw text" },
+    "message": { "type": "message", "description": "Fallback to pass raw text" },
     "SendQuery": {
       "type": "event",
       "name": "SendQuery",
